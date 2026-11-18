@@ -29,11 +29,6 @@ class Solution {
 
             int node = curr[0];
             int distance = curr[1];
-
-            if (distance > dist[node]) {
-                continue;
-            }
-
             for (int[] neighbour : adj[node]) {
 
                 int nextNode = neighbour[0];
